@@ -7,7 +7,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = st.secrets.secret_key
 
 st.header("My First Chatbot")
 
@@ -78,7 +78,6 @@ if file is not None:
          "Context:\n{context}"),
         ("human", "{question}")
     ])
-
 
     chain = (
             {"context": retriever | format_docs, "question": RunnablePassthrough()}

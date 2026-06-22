@@ -9,7 +9,7 @@ from langchain_core.runnables import RunnablePassthrough
 
 OPENAI_API_KEY = st.secrets.secret_key
 
-st.header("My First Chatbot")
+st.header("Know your doc")
 
 with st.sidebar:
     st.title("Your Documents")
@@ -43,7 +43,7 @@ if file is not None:
     vector_store = FAISS.from_texts(chunks,embeddings)
 
     #get user question
-    user_question = st.text_input("Type your question here")
+    user_question = st.text_input("",placeholder="Type your question here")
 
     #generate answer
     #question -> embeddings -> similiairty search -> results to LLM -> response (CHAIN)

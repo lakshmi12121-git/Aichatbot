@@ -79,7 +79,6 @@ if file is not None:
         ("human", "{question}")
     ])
 
-
     chain = (
             {"context": retriever | format_docs, "question": RunnablePassthrough()}
             | prompt

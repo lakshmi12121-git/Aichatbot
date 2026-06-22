@@ -7,7 +7,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "ssk-proj-Zctmdvx6O4W0G4ieTO2L-iCG4TI0MeSSCLvZSEPnV3f3vK4jUxCIi1_KSjUPPVaTeYZOmhsbAZT3BlbkFJEI2GU5qegbARBX7QGy2FyUbmVckBcWF9cDKuC63p3Zj8ixPNTjNuAG_rlLIm7Ot02rsQjDVkMA"
 
 st.header("My First Chatbot")
 
